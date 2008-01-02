@@ -15,6 +15,7 @@ Summary: Packages rebuilder
 Group: Development/Tools
 URL: http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/build_system/iurt/trunk/
 Source: %{name}.tar
+BuildRoot: %{_tmppath}/%{name}-buildroot
 Requires: mkcd
 BuildArch: noarch
 
