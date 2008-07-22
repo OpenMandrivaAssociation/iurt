@@ -5,7 +5,7 @@
 ############################################
 
 %define name iurt
-%define release %mkrel 2
+%define release %mkrel 3
 
 Name: %{name}
 Version: 0.6.4
