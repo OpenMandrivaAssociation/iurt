@@ -12,7 +12,7 @@ Version: 0.6.4
 Release: %{release}
 License: GPL
 Summary: Packages rebuilder
-Group: Development/Tools
+Group: Development/Other
 URL: http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/build_system/iurt/trunk/
 Source: %{name}-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-buildroot
