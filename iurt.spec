@@ -5,7 +5,7 @@
 ############################################
 
 %define name iurt
-%define release %mkrel 5
+%define release %mkrel 6
 
 Name: %{name}
 Version: 0.6.4
@@ -14,7 +14,7 @@ License: GPL
 Summary: Packages rebuilder
 Group: Development/Tools
 URL: http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/build_system/iurt/trunk/
-Source: %{name}.tar
+Source: %{name}-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-buildroot
 Requires: mkcd
 BuildArch: noarch
