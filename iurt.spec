@@ -8,17 +8,17 @@
 %define svn r259002
 %define release %mkrel 6.%svn.1
 
-Name: %{name}
-Version: 0.6.4
-Release: %{release}
-License: GPL
-Summary: Packages rebuilder
-Group: Development/Other
-URL: http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/build_system/iurt/trunk/
-Source: %{name}-%{version}-%{svn}.tar.gz
-BuildRoot: %{_tmppath}/%{name}-buildroot
-Requires: mkcd
-BuildArch: noarch
+Name:		%{name}
+Version:	0.6.4
+Release:	%{release}
+License:	GPL
+Summary:	Packages rebuilder
+Group:		Development/Other
+URL:		http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/build_system/iurt/trunk/
+Source:		%{name}-%{version}-%{svn}.tar.gz
+BuildRoot:	%{_tmppath}/%{name}-buildroot
+Requires:	mkcd
+BuildArch:	noarch
 
 %description
 iurt is a collection of tools to create an automatic rebuild system. It
