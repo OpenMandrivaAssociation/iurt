@@ -5,7 +5,7 @@
 ############################################
 
 %define name iurt
-%define svn r259002
+%define svn r265102
 %define release %mkrel 6.%svn.1
 
 Name:		%{name}
