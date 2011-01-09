@@ -4,18 +4,16 @@
 #   via /svn/soft/build_system/iurt/trunk/
 ############################################
 
-%define name iurt
-%define svn r271258
-%define release %mkrel 6.%svn.1
+%define	svn	r271421
 
-Name:		%{name}
+Name:		iurt
 Version:	0.6.4
-Release:	%{release}
+Release:	%mkrel 6.%{svn}.2
 License:	GPL
 Summary:	Packages rebuilder
 Group:		Development/Other
 URL:		http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/build_system/iurt/trunk/
-Source:		%{name}-%{version}-%{svn}.tar.gz
+Source0:	%{name}-%{version}-%{svn}.tar.xz
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 Requires:	mkcd
 BuildArch:	noarch
@@ -26,7 +24,7 @@ contains the rebuild script, iurt, as well as the scheduler, ulri, and the
 upload script, emi.
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -42,6 +40,3 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/ulri
 %{_sbindir}/iurt_root_command
 %{perl_vendorlib}/Iurt
-
-
-
