@@ -4,7 +4,7 @@
 #   via /svn/soft/build_system/iurt/trunk/
 ############################################
 
-%define	svn	r271421
+%define	svn	r272097
 
 Name:		iurt
 Version:	0.6.4
