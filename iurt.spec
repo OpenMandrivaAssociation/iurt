@@ -24,7 +24,7 @@ contains the rebuild script, iurt, as well as the scheduler, ulri, and the
 upload script, emi.
 
 %prep
-%setup -q
+%setup -q -n %name-%version-%svn
 
 %install
 rm -rf $RPM_BUILD_ROOT
