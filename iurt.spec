@@ -4,27 +4,28 @@
 #   via /svn/soft/build_system/iurt/trunk/
 ############################################
 
-%define	svn	r272332
+%define name iurt
+%define release %mkrel 1
 
-Name:		iurt
-Version:	0.6.4
-Release:	%mkrel 6.%{svn}.3
-License:	GPL
-Summary:	Packages rebuilder
-Group:		Development/Other
-URL:		http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/build_system/iurt/trunk/
-Source0:	%{name}.tar.xz
-BuildRoot:	%{_tmppath}/%{name}-buildroot
-Requires:	mkcd
-BuildArch:	noarch
+Name: %{name}
+Version: 0.6.5
+Release: %{release}
+License: GPL
+Summary: Packages rebuilder
+Group: Development/Tools
+URL: http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/build_system/iurt/trunk/
+Source: %{name}.tar.xz
+BuildRoot: %{_tmppath}/%{name}-buildroot
+Requires: mkcd
+BuildArch: noarch
 
 %description
-iurt is a collection of tools to create an automatic rebuild system. It
-contains the rebuild script, iurt, as well as the scheduler, ulri, and the
-upload script, emi.
+iurt is a collection of tools to create an automatic rebuild system. It contains
+the rebuild script, iurt, as well as the scheduler, ulri, and the upload script, 
+emi.
 
 %prep
-%setup -q -n iurt-0.6.4-r272332
+%setup -q -n %{name}-%{version}
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -40,3 +41,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/ulri
 %{_sbindir}/iurt_root_command
 %{perl_vendorlib}/Iurt
+
