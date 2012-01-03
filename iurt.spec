@@ -13,7 +13,7 @@ License:	GPL
 Summary:	Packages rebuilder
 Group:		Development/Other
 URL:		http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/build_system/iurt/trunk/
-Source0:	%{name}-%{version}-%{svn}.tar.xz
+Source0:	%{name}.tar.xz
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 Requires:	mkcd
 BuildArch:	noarch
@@ -24,7 +24,7 @@ contains the rebuild script, iurt, as well as the scheduler, ulri, and the
 upload script, emi.
 
 %prep
-%setup -q -n %name-%version-%svn
+%setup -q -n iurt-0.6.4-r272332
 
 %install
 rm -rf $RPM_BUILD_ROOT
