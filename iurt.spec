@@ -4,37 +4,27 @@
 #   via /svn/soft/build_system/iurt/trunk/
 ############################################
 
-%define name iurt
-%define release %mkrel 1
-
-Name: %{name}
+Name: iurt
 Version: 0.6.5
-Release: %{release}
+Release: 2
 License: GPL
 Summary: Packages rebuilder
 Group: Development/Other
 URL: http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/build_system/iurt/trunk/
 Source: %{name}.tar.xz
-BuildRoot: %{_tmppath}/%{name}-buildroot
 Requires: mkcd
 BuildArch: noarch
 
 %description
 iurt is a collection of tools to create an automatic rebuild system. It
-contains
-the rebuild script, iurt, as well as the scheduler, ulri, and the upload
-script, 
-emi.
+contains the rebuild script, iurt, as well as the scheduler, ulri, and
+the upload script, emi.
 
 %prep
 %setup -q -n %{name}-%{version}
 
 %install
-rm -rf $RPM_BUILD_ROOT
-%makeinstall DESTDIR=$RPM_BUILD_ROOT
-
-%clean
-rm -rf $RPM_BUILD_ROOT
+%makeinstall DESTDIR=%{buildroot}
 
 %files
 %defattr(-,root,root)
