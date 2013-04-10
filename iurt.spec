@@ -20,8 +20,10 @@ Requires: mkcd
 BuildArch: noarch
 
 %description
-iurt is a collection of tools to create an automatic rebuild system. It contains
-the rebuild script, iurt, as well as the scheduler, ulri, and the upload script, 
+iurt is a collection of tools to create an automatic rebuild system. It
+contains
+the rebuild script, iurt, as well as the scheduler, ulri, and the upload
+script, 
 emi.
 
 %prep
