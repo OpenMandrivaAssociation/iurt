@@ -6,7 +6,7 @@
 
 Name: iurt
 Version: 0.6.5
-Release: 2
+Release: 3
 License: GPL
 Summary: Packages rebuilder
 Group: Development/Other
