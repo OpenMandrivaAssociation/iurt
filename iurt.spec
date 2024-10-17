@@ -10,7 +10,7 @@ Release: 3
 License: GPL
 Summary: Packages rebuilder
 Group: Development/Other
-URL: http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/build_system/iurt/trunk/
+URL: https://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/build_system/iurt/trunk/
 Source: %{name}.tar.xz
 Requires: mkcd
 BuildArch: noarch
